@@ -1,5 +1,9 @@
 /* externalstyle.css */
+/*.css file cannot contain any HTML code*/
 
+
+/*<div> element seperates sections of the html page*/
+/*div selector applies to all the div elements within the html page */
 div {
     background-color: red;
     

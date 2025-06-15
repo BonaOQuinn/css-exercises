@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--***external methods are linked to the CSS file in the head***-->
     <link rel="stylesheet" href="externalstyle.css">
 
     <title>Methods for Adding CSS</title>
-  </head>
-  <body>
-    <div>Style me via the external method!</div>
 
-    <p>
-      <style>
-      div {
+    <!--**internal method are declared within the head as well**-->
+    <style> /*when using the internal CSS method you have to use the style tag */
+
+      /* p selector is going to apply to all the p elements within the html page */
+      p {
         background-color: green; 
 
         color: white;
@@ -21,9 +22,14 @@
         font-size: 18px; 
 
       }
-      </style>
-    </p>
+    </style> 
 
-    <button><div style="background-color: orange; font-size: 18px;"> </div></button>
+  </head>
+  <body>
+    <div>Style me via the external method!</div>
+    <p>I would like to be styled with the internal method</p>
+
+          <!--Selector followed by style tag is used in the inline method-->
+    <button style="background-color: orange; font-size: 18px;">Inline Method</button>
   </body>
 </html>
