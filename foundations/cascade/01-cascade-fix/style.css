@@ -2,26 +2,35 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+/*this is the first para class that initalizes
+  color and the boldness */
+.para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+/*since this class includes two class it takes priority over
+  the other two para classes therefore making the second paragraph smaller */
+.small-para.para {
   font-size: 14px;
   font-weight: 800;
 }
 
+/*This second para class takes priority because it is declared last
+  but the only thing it does is make the font size bigger */
 .para {
   font-size: 22px;
 }
 
-.confirm {
+/*this class takes priority over the button class because this 
+  includes two classes. so the background of the button will be green
+  and the text will be white and gold */
+.confirm.button {
   background: green;
   color: white;
   font-weight: bold;
 } 
+
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -29,13 +38,16 @@ body {
   font-size: 20px;
 }
 
-.child {
+/*This selector takes priority over the text class because
+  it is a type selector that also includes the class. So the 
+  font size changes to small */
+div.child{
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
 }
 
-div.text {
+.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;

@@ -1,1 +1,23 @@
-/* Add CSS Styling */
+/*style.css*/
+
+
+/*Chaining selector: this selector only affects elements that meets its criteria*/
+/*ex below) the first chain selector only applies to the elements that include
+            an image element, as well as the classes avatar and proportioned */
+
+/*snytax: elements or classes seperated by dots*/
+
+img.avatar.proportioned {
+
+    width: 300px;
+
+    height: auto;
+
+}
+
+img.avatar.distorted {
+
+    width: 200px;
+
+    height: 400px;
+}

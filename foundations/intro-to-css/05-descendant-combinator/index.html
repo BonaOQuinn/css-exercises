@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Descendant Combinator</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--for this excerice, I want to explore descendent combinators using both internal and external CSS methods-->
+
+    <!--Internal Method:-->
+    
+    <!--syntax: class or element seperated by a space-->
+    <style>
+      div p {
+        background-color: #ffff00;
+
+        color: red;
+
+        font-size: 20px;
+
+        text-align: center;
+      }
+    </style>
+
   </head>
   <body>
     <div class="container">
@@ -17,5 +35,17 @@
       <p class="text">This should be styled.</p>
       <p class="text">This should be styled.</p>
     </div>
+    <br>
+    <br>
+    <div class="container2">
+      <p class="text">This should be styled.</p>
+    </div>
+    <p class="text">This should be unstyled.</p>
+    <p class="text">This should be unstyled.</p>
+    <div class="container2">
+      <p class="text">This should be styled.</p>
+      <p class="text">This should be styled.</p>
+    </div>
+
   </body>
 </html>
